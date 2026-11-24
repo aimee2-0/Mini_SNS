@@ -1,0 +1,171 @@
+/* Simple color classes - use alongside Bootstrap */
+.bg-simple-gray {
+    background-color: #e8e8e8 !important;
+}
+
+.bg-simple-light {
+    background-color: #f8f8f8 !important;
+}
+
+.bg-simple-dark {
+    background-color: #2c2c2c !important;
+}
+
+.text-simple-gray {
+    color: #555555 !important;
+}
+
+.text-simple-dark {
+    color: #1a1a1a !important;
+}
+
+.border-simple {
+    border-color: #d0d0d0 !important;
+}
+
+.btn-simple {
+    background-color: #4a4a4a !important;
+    border-color: #4a4a4a !important;
+    color: #ffffff !important;
+}
+
+.btn-simple:hover {
+    background-color: #333333 !important;
+    border-color: #333333 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-simple {
+    border-color: #cccccc !important;
+    color: #333333 !important;
+}
+
+.btn-outline-simple:hover {
+    background-color: #f0f0f0 !important;
+    border-color: #999999 !important;
+    color: #000000 !important;
+}
+
+.badge-simple {
+    background-color: #e0e0e0 !important;
+    color: #333333 !important;
+}
+
+.badge-simple-dark {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Black and white theme - Profile page */
+
+/* Navbar - black background with white text */
+.navbar {
+    background: #000000 !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #cccccc !important;
+}
+
+/* Main section */
+main {
+    background: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Cards inside main */
+main .card {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* List groups and tabs - subtle borders */
+main .list-group-item {
+    border-color: #d0d0d0;
+}
+
+main .nav-tabs {
+    border-bottom-color: #d0d0d0;
+}
+
+main .nav-tabs .nav-link {
+    color: #555555;
+}
+
+main .nav-tabs .nav-link.active {
+    color: #1a1a1a;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: #d0d0d0 #d0d0d0 transparent;
+}
+
+/* Editable profile fields */
+.profile-editable {
+    outline: none;
+    min-height: 1.5em;
+    padding: 0.125rem 0.25rem;
+    margin: -0.125rem -0.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease;
+}
+
+.profile-editable:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.profile-editable:focus {
+    background-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 0 1px #d0d0d0;
+}
+
+.profile-editable:empty::before {
+    content: attr(data-placeholder);
+    color: #999;
+}
+
+.edit-hint {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.list-group-item:hover .edit-hint {
+    opacity: 0.8;
+}
+
+/* Profile photo - you will set img src from JSP (e.g. user profile photo path) */
+.profile-photo {
+    max-height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.profile-photo-form .btn {
+    cursor: pointer;
+}
+
+/* Edit in place: same card, no pop-up. View vs form toggled by checkbox (no JS). */
+.profile-edit-wrap {
+    display: none;
+}
+#profile-edit-toggle:checked ~ .profile-view,
+#profile-edit-toggle:checked ~ .profile-edit-btn {
+    display: none !important;
+}
+#profile-edit-toggle:checked ~ .profile-edit-wrap {
+    display: block !important;
+}
+
+/* About section: same in-place edit (no pop-up, no JS) */
+.about-edit-wrap {
+    display: none;
+}
+#about-edit-toggle:checked ~ .about-heading-view,
+#about-edit-toggle:checked ~ .about-view {
+    display: none !important;
+}
+#about-edit-toggle:checked ~ .about-edit-wrap {
+    display: block !important;
+}

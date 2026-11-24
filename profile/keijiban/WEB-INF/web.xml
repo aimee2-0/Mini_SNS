@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>ProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    
+
+    <servlet>
+    <servlet-name>ProfilePage</servlet-name>
+    <jsp-file>/profile.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ProfilePage</servlet-name>
+    <url-pattern>/profilePage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>ProfileEditServlet</servlet-name>
+    <servlet-class>ProfileEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ProfileEditServlet</servlet-name>
+    <url-pattern>/ProfileEditServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>UpdateAboutServlet</servlet-name>
+    <servlet-class>UpdateAboutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>UpdateAboutServlet</servlet-name>
+    <url-pattern>/UpdateAboutServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
