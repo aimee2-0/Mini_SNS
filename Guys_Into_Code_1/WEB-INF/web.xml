@@ -1,0 +1,265 @@
+<web-app>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>account.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginPage</servlet-name>
+        <jsp-file>/Login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginPage</servlet-name>
+        <url-pattern>/LoginPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserRegist</servlet-name>
+        <jsp-file>/UserRegist.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRegist</servlet-name>
+        <url-pattern>/UserRegist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Regist</servlet-name>
+        <servlet-class>account.RegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Regist</servlet-name>
+        <url-pattern>/Regist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>account.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Top</servlet-name>
+        <jsp-file>/TopPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Top</servlet-name>
+        <url-pattern>/TopPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QAPost</servlet-name>
+        <jsp-file>/QAPost.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QAPost</servlet-name>
+        <url-pattern>/QAPost</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QADetailPage</servlet-name>
+        <jsp-file>/QADetail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QADetailPage</servlet-name>
+        <url-pattern>/QADetailPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SNSPost</servlet-name>
+        <jsp-file>/SNSPost.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SNSPost</servlet-name>
+        <url-pattern>/SNSPost</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SNSDetailPage</servlet-name>
+        <jsp-file>/SNSDetail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SNSDetailPage</servlet-name>
+        <url-pattern>/SNSDetailPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Timeline</servlet-name>
+        <servlet-class>TimelineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Timeline</servlet-name>
+        <url-pattern>/Top</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QAPostServlet</servlet-name>
+        <servlet-class>qa.QAPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QAPostServlet</servlet-name>
+        <url-pattern>/QAPostServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AnswerServlet</servlet-name>
+        <servlet-class>qa.AnswerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnswerServlet</servlet-name>
+        <url-pattern>/AnswerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QADetail</servlet-name>
+        <servlet-class>qa.QADetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QADetail</servlet-name>
+        <url-pattern>/QADetail</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>prof.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfilePage</servlet-name>
+        <jsp-file>/profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfilePage</servlet-name>
+        <url-pattern>/profilePage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OtherUserProfilePage</servlet-name>
+        <jsp-file>/OtherUserProfile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OtherUserProfilePage</servlet-name>
+        <url-pattern>/OtherProfilePage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OtherUserProfileServlet</servlet-name>
+        <servlet-class>prof.OtherUserProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OtherUserProfileServlet</servlet-name>
+        <url-pattern>/OtherProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfileEditServlet</servlet-name>
+        <servlet-class>prof.ProfileEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileEditServlet</servlet-name>
+        <url-pattern>/ProfileEditServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateAboutServlet</servlet-name>
+        <servlet-class>prof.UpdateAboutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateAboutServlet</servlet-name>
+        <url-pattern>/UpdateAboutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CountServlet</servlet-name>
+        <servlet-class>prof.CountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CountServlet</servlet-name>
+        <url-pattern>/CountServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SNSPostServlet</servlet-name>
+        <servlet-class>sns.SNSPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SNSPostServlet</servlet-name>
+        <url-pattern>/SNSPostServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CommentServlet</servlet-name>
+        <servlet-class>sns.CommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CommentServlet</servlet-name>
+        <url-pattern>/CommentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SNSDetail</servlet-name>
+        <servlet-class>sns.SNSDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SNSDetail</servlet-name>
+        <url-pattern>/SNSDetail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadImage</servlet-name>
+        <servlet-class>prof.UploadImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadImage</servlet-name>
+        <url-pattern>/UploadImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfileImageServlet</servlet-name>
+        <servlet-class>prof.ProfileImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileImageServlet</servlet-name>
+        <url-pattern>/ProfileImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserImageServlet</servlet-name>
+        <servlet-class>image.UserImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserImageServlet</servlet-name>
+        <url-pattern>/UserImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SNSPostImageServlet</servlet-name>
+        <servlet-class>image.SNSPostImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SNSPostImageServlet</servlet-name>
+        <url-pattern>/SNSPostImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QAPostImageServlet</servlet-name>
+        <servlet-class>image.QAPostImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QAPostImageServlet</servlet-name>
+        <url-pattern>/QAPostImage</url-pattern>
+    </servlet-mapping>
+
+</web-app>
