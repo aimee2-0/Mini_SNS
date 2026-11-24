@@ -1,0 +1,101 @@
+
+        /* New simple color classes - use alongside existing Bootstrap colors */
+        .bg-simple-gray {
+            background-color: #e8e8e8 !important;
+        }
+
+        .bg-simple-light {
+            background-color: #f8f8f8 !important;
+        }
+
+        .bg-simple-dark {
+            background-color: #2c2c2c !important;
+        }
+
+        .text-simple-gray {
+            color: #555555 !important;
+        }
+
+        .text-simple-dark {
+            color: #1a1a1a !important;
+        }
+
+        .border-simple {
+            border-color: #d0d0d0 !important;
+        }
+
+        .btn-simple {
+            background-color: #4a4a4a !important;
+            border-color: #4a4a4a !important;
+            color: #ffffff !important;
+        }
+
+        .btn-simple:hover {
+            background-color: #333333 !important;
+            border-color: #333333 !important;
+            color: #ffffff !important;
+        }
+
+        .btn-outline-simple {
+            border-color: #cccccc !important;
+            color: #333333 !important;
+        }
+
+        .btn-outline-simple:hover {
+            background-color: #f0f0f0 !important;
+            border-color: #999999 !important;
+            color: #000000 !important;
+        }
+
+        .badge-simple {
+            background-color: #e0e0e0 !important;
+            color: #333333 !important;
+        }
+
+        .badge-simple-dark {
+            background-color: #404040 !important;
+            color: #ffffff !important;
+        }
+
+        /* Black and White Color Scheme */
+
+        /* Navbar - black background with white text */
+        .navbar {
+            background: #000000 !important;
+        }
+
+        /* Navbar text - white */
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-brand:hover,
+        .navbar-nav .nav-link:hover {
+            color: #cccccc !important;
+        }
+
+        /* Main section - transparent dark background */
+        main {
+            background: rgba(0, 0, 0, 0.05) !important;
+        }
+
+        /* Main content cards */
+        main .card {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+        }
+
+        /* SNS section - light gray background */
+        aside.col-lg-5 {
+            background: #f5f5f5 !important;
+        }
+
+        /* SNS cards */
+        aside.col-lg-5 .card {
+            background-color: #ffffff !important;
+        }
+
+        /* Tags sidebar - light gray background */
+        aside.col-lg-1 {
+            background: #f5f5f5 !important;
+        }

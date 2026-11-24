@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Post - Code InTo Guys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Guys InTo Code</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Q&A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">SNS</a></li>
+                </ul>
+
+                <a class="btn btn-primary btn-sm ms-2">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid py-4">
+        <div class="form-container">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white border-bottom">
+                    <h4 class="mb-0">
+                        <i class="fas fa-plus-circle me-2"></i>Create New Post
+                    </h4>
+                    <small class="text-muted">Share Your life points</small>
+                </div>
+                <div class="card-body p-4">
+                    <form id="addPostForm">
+                        <!-- Post Content -->
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
+                                <div>
+                                    <strong id="userName">Your Name</strong><br>
+                                    <small class="text-muted">Posting now</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="postContent" class="form-label">
+                                <i class="fas fa-comment-alt me-2"></i>What's on your mind?
+                            </label>
+                            <textarea class="form-control" id="postContent" rows="6"
+                                placeholder="Share experience..." required></textarea>
+                            <small class="text-muted">Express yourself freely</small>
+                        </div>
+
+                        <!-- Image Upload -->
+                        <div class="mb-4">
+                            <label for="postImage" class="form-label">
+                                <i class="fas fa-image me-2"></i>Add Image (Optional)
+                            </label>
+                            <input type="file" class="form-control" id="postImage" accept="image/*">
+                            <small class="text-muted">Upload a screenshot or image related to your post</small>
+                            <div id="imagePreviewContainer" class="image-preview-container" style="display: none;">
+                                <img id="imagePreview" class="image-preview" alt="Preview">
+                                <button type="button" class="remove-image" id="removeImage">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        
+
+                        
+
+                        <!-- Form Actions -->
+                        <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                            <a href="index.html" class="btn btn-outline-secondary">
+                                <i class="fas fa-times me-2"></i>Cancel
+                            </a>
+                            <div>
+                                <button type="button" class="btn btn-outline-primary me-2" id="previewBtn">
+                                    <i class="fas fa-eye me-2"></i>Preview
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>Post
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Preview Card (Hidden by default) -->
+            <div class="card shadow-sm mt-4" id="previewCard" style="display: none;">
+                <div class="card-header bg-white border-bottom">
+                    <h5 class="mb-0">
+                        <i class="fas fa-eye me-2"></i>Preview
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <!-- Post Header -->
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
+                        <div>
+                            <strong id="previewUserName">Your Name</strong><br>
+                            <small class="text-muted">Just now</small>
+                        </div>
+                    </div>
+
+                    <!-- Post Content -->
+                    <p id="previewContent" class="mb-2"></p>
+
+                    <!-- Preview Image -->
+                    <div id="previewImageContainer" style="display: none;">
+                        <img id="previewImage" class="img-fluid rounded mb-2" alt="Post image">
+                    </div>
+
+                    <!-- Preview Code -->
+                    <div id="previewCodeContainer" style="display: none;">
+                        <pre class="bg-light p-3 rounded"><code id="previewCode"></code></pre>
+                    </div>
+
+                    <!-- Preview Tags -->
+                    <div id="previewTags" class="mb-2"></div>
+
+                    <!-- Post Actions -->
+                    <div class="d-flex justify-content-between text-muted small border-top pt-2">
+                        <span><i class="far fa-comment"></i> Comment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-4">
+        © 2026 Code InTo Guys
+    </footer>
+
+    <!-- JSP / Servlet placeholder: -->
+    <!-- Implement tag management, image preview, form submission, and preview logic -->
+    <!-- here using JSP/Tomcat instead of client-side JavaScript. -->
+</body>
+
+</html>
